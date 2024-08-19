@@ -142,6 +142,20 @@ figure {
   color: #102B4C;
 }
 
+#fh5co-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-icon {
+  height: 32pt;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 .fh5co-nav a {
   padding: 5px 10px;
   color: #000;
