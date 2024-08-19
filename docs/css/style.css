@@ -12,11 +12,11 @@
 *
 * ======================================================= */
 body {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.7;
-  color: gray;
+  color: #102B4C;
   background: #e8e8e8;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 a {
-  color: #66D37E;
+  color: #256A93;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -59,7 +59,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #66D37E;
+  color: #256A93;
   outline: none;
   text-decoration: none;
 }
@@ -75,25 +75,25 @@ h4,
 h5,
 h6,
 figure {
-  color: #000;
-  font-family: "Source Sans Pro", sans-serif;
+  color: #102B4C;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 ::-webkit-selection {
-  color: #fff;
-  background: #66D37E;
+  color: #FDF9ED;
+  background: #256A93;
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #66D37E;
+  color: #FDF9ED;
+  background: #256A93;
 }
 
 ::selection {
-  color: #fff;
-  background: #66D37E;
+  color: #FDF9ED;
+  background: #256A93;
 }
 
 .container-wrap {
@@ -146,7 +146,7 @@ figure {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: inherit;
+  color: #102B4C;
 }
 
 .logo-icon {
@@ -158,7 +158,7 @@ figure {
 
 .fh5co-nav a {
   padding: 5px 10px;
-  color: #000;
+  color: #102B4C;
 }
 
 @media screen and (max-width: 768px) {
@@ -173,7 +173,7 @@ figure {
 }
 
 .fh5co-nav ul li {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -185,7 +185,7 @@ figure {
 
 .fh5co-nav ul li a {
   position: relative;
-  font-size: 13px;
+  font-size: 15px;
   padding: 30px 12px;
   color: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.5s;
@@ -201,7 +201,7 @@ figure {
   content: '';
   width: 58%;
   height: 2px;
-  background: #66D37E;
+  background: #256A93;
   margin: 0 auto;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -211,7 +211,7 @@ figure {
 }
 
 .fh5co-nav ul li a:hover {
-  color: #000;
+  color: #102B4C;
 }
 
 .fh5co-nav ul li a:hover:after {
@@ -256,7 +256,7 @@ figure {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #000;
+  border-bottom-color: #102B4C;
   border-width: 8px;
   margin-left: -8px;
 }
@@ -273,7 +273,7 @@ figure {
 .fh5co-nav ul li.has-dropdown .dropdown li a {
   padding: 2px 0;
   display: block;
-  color: #999999;
+  color: #FDF9ED;
   line-height: 1.2;
   text-transform: none;
   font-size: 13px;
@@ -286,16 +286,16 @@ figure {
 
 .fh5co-nav ul li.has-dropdown:hover a,
 .fh5co-nav ul li.has-dropdown:focus a {
-  color: #000;
+  color: #102B4C;
 }
 
 .fh5co-nav ul li.btn-cta a {
   padding: 30px 0px !important;
-  color: #fff;
+  color: #FDF9ED;
 }
 
 .fh5co-nav ul li.btn-cta a span {
-  background: #66d37e;
+  background: #256A93;
   padding: 4px 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -317,7 +317,7 @@ figure {
 }
 
 .fh5co-nav ul li.active>a {
-  color: #000 !important;
+  color: #102B4C !important;
   position: relative;
 }
 
@@ -457,7 +457,7 @@ figure {
 #fh5co-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
   background: transparent;
-  border: 2px solid #66D37E;
+  border: 2px solid #256A93;
 }
 
 #fh5co-hero .flexslider .flex-direction-nav {
@@ -488,8 +488,8 @@ figure {
 #fh5co-hero .flexslider .slider-text>.slider-text-inner h2 {
   margin: 0;
   padding: 0;
-  color: black;
-  font-family: "Oxygen", sans-serif;
+  color: #102B4C;
+  font-family: "Montserrat", sans-serif;
 }
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner h1 {
@@ -512,8 +512,8 @@ figure {
 }
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner h2 a {
-  color: rgba(102, 211, 126, 0.8);
-  border-bottom: 1px solid rgba(102, 211, 126, 0.7);
+  color: rgba(90, 44, 108, 0.8);
+  border-bottom: 1px solid rgba(90, 44, 108, 0.7);
 }
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner .heading-section {
@@ -532,16 +532,20 @@ figure {
 }
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner s .fh5co-lead .icon-heart {
-  color: #d9534f;
+  color: #ED7BA4;
 }
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner .btn {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #000;
+  color: #102B4C;
   padding: 20px 30px !important;
   border: none;
+}
+
+#fh5co-hero .flexslider .slider-text>.slider-text-inner .btn:hover {
+  color: #FDF9ED;
 }
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
@@ -591,14 +595,14 @@ figure {
 
 .services h3 {
   font-size: 13px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
 .services h3 a {
-  color: #000;
+  color: #102B4C;
 }
 
 .services .icon {
@@ -626,7 +630,7 @@ figure {
   vertical-align: middle;
   font-size: 40px;
   line-height: 40px;
-  color: #000;
+  color: #102B4C;
 }
 
 .work {
@@ -727,11 +731,11 @@ figure {
 .fh5co-counters .fh5co-counter {
   font-size: 40px;
   display: block;
-  color: black;
+  color: #102B4C;
   width: 100%;
   font-weight: 400;
   margin-bottom: .3em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .fh5co-counters .fh5co-counter-label {
@@ -740,9 +744,9 @@ figure {
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: gray;
+  color: #46ACCA;
 }
 
 .fh5co-blog {
@@ -829,11 +833,11 @@ figure {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .fh5co-blog .blog-text h3 a {
-  color: black;
+  color: #102B4C;
 }
 
 .blog-flex {
@@ -918,7 +922,7 @@ figure {
 
 .blog-flex .featured-blog .desc-t h3 {
   font-weight: 700;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   margin-bottom: 10px;
   line-height: 40px;
@@ -945,7 +949,7 @@ figure {
   letter-spacing: 2px;
   font-weight: 600;
   font-size: 14px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   border: 1px solid red;
   padding: 10px 15px;
@@ -985,7 +989,7 @@ figure {
 
 .blog-flex .blog-entry .blog-post .desc h3 {
   font-weight: 300;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 10px;
@@ -1023,7 +1027,7 @@ figure {
   margin: 0 0 20px 0;
   position: relative;
   padding-left: 40px;
-  color: #000;
+  color: #102B4C;
 }
 
 .contact-info li i {
@@ -1035,7 +1039,7 @@ figure {
 }
 
 .contact-info li a {
-  color: #000;
+  color: #102B4C;
 }
 
 .form-control {
@@ -1068,7 +1072,7 @@ input[type="text"] {
 }
 
 .form-group .btn-modify {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -1095,8 +1099,8 @@ input[type="text"] {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
-  color: #66D37E;
+  display: inline;
+  color: #256A93;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1118,10 +1122,10 @@ input[type="text"] {
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: 700;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000;
+  color: #102B4C;
 }
 
 .fh5co-heading span {
@@ -1435,7 +1439,7 @@ input[type="text"] {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 1px;
@@ -1464,28 +1468,29 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #66D37E;
-  color: #fff;
-  border: 2px solid #66D37E;
+  background: #256A93;
+  color: #FDF9ED;
+  border: 2px solid #256A93;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #7ad98f !important;
-  border-color: #7ad98f !important;
+  background: #5A2C6C !important;
+  border-color: #5A2C6C !important;
+  color: #FDF9ED;
 }
 
 .btn-primary.btn-outline {
   background: transparent;
-  color: #66D37E;
-  border: 2px solid #66D37E;
+  color: #256A93;
+  border: 2px solid #256A93;
 }
 
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #66D37E;
+  background: #256A93;
   color: #fff;
 }
 
@@ -1568,28 +1573,28 @@ input[type="text"] {
 }
 
 .btn-danger {
-  background: #d9534f;
+  background: #ED7BA4;
   color: #fff;
-  border: 2px solid #d9534f;
+  border: 2px solid #ED7BA4;
 }
 
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active {
-  background: #d43f3a !important;
-  border-color: #d43f3a !important;
+  background: #ED7BA4 !important;
+  border-color: #ED7BA4 !important;
 }
 
 .btn-danger.btn-outline {
   background: transparent;
-  color: #d9534f;
-  border: 2px solid #d9534f;
+  color: #ED7BA4;
+  border: 2px solid #ED7BA4;
 }
 
 .btn-danger.btn-outline:hover,
 .btn-danger.btn-outline:focus,
 .btn-danger.btn-outline:active {
-  background: #d9534f;
+  background: #ED7BA4;
   color: #fff;
 }
 
@@ -1651,7 +1656,7 @@ input[type="text"] {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #66D37E;
+  border-color: #256A93;
 }
 
 .row-pb-md {
