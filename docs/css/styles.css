@@ -4,14 +4,14 @@ body {
     color: #102B4C;
     /* Primary Text Color */
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    /* Add padding to create space between the body and the edges */
     background-color: #EBEBEB;
     /* Light Gray Background */
     min-height: 100vh;
     /* Ensure the body covers the full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    /* Use block layout to allow the header to be at the top */
 }
 
 /* Container for White Box */
@@ -25,8 +25,21 @@ body {
     /* Subtle Shadow for Depth */
     border-radius: 8px;
     /* Rounded Corners */
-    margin: 20px;
-    /* Add a bit of space around the container */
+    margin: 20px auto;
+    /* Center the container horizontally with a bit of margin */
+}
+
+/* Header at the top with margin */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Internal padding within the header */
+    margin-bottom: 20px;
+    /* Add space below the header */
+    background-color: transparent;
+    /* Transparent header background */
 }
 
 /* Typography */
