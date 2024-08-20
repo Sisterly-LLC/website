@@ -20,7 +20,6 @@ header {
 
 /* Base Content Container Styles */
 .content-container {
-    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +54,7 @@ header {
     background-color: rgba(16, 43, 76, 0.5);
     /* Primary Text Color with Alpha */
     background-blend-mode: multiply;
+    min-height: 500px;
 }
 
 .content-container .wordmark {
