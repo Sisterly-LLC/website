@@ -100,12 +100,15 @@ a:hover {
     /* Sky Blue for Hover */
 }
 
-/* Menu Styling */
 .menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: flex-end;
+    /* Align items to the right */
+    flex-grow: 1;
+    /* Ensure the menu takes up the available space */
 }
 
 .menu li {
@@ -114,8 +117,8 @@ a:hover {
 
 .menu a {
     text-decoration: none;
-    color: #102B4C;
-    /* Primary Text Color */
+    color: #256A93;
+    /* Lighter color for default state */
     font-weight: 600;
     /* Menu items at weight 600 */
     font-size: 16pt;
@@ -124,6 +127,8 @@ a:hover {
     /* Required for the underline effect */
     text-transform: uppercase;
     /* Force all caps */
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition for color */
 }
 
 .menu a::after {
@@ -133,12 +138,17 @@ a:hover {
     height: 2px;
     /* Thickness of the underline */
     background-color: #102B4C;
-    /* Color of the underline */
+    /* Darker color for underline */
     bottom: -2px;
     /* Position the underline just below the text */
     left: 0;
     transition: width 0.3s ease-in-out;
-    /* Smooth transition */
+    /* Smooth transition for underline */
+}
+
+.menu a:hover {
+    color: #102B4C;
+    /* Darker color on hover */
 }
 
 .menu a:hover::after {
