@@ -110,7 +110,7 @@ body {
     text-decoration: none;
     border: none;
     /* No border */
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
     margin-right: 10px;
     /* Add space between buttons */
 }
@@ -240,7 +240,7 @@ a:hover {
     /* Required for the underline effect */
     text-transform: uppercase;
     /* Force all caps */
-    transition: color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
     /* Smooth transition for color */
 }
 
@@ -255,7 +255,7 @@ a:hover {
     bottom: -2px;
     /* Position the underline just below the text */
     left: 0;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.2s ease-in-out;
     /* Smooth transition for underline */
 }
 
