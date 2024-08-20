@@ -4,9 +4,11 @@ body {
     color: #102B4C;
     /* Primary Text Color */
     margin: 0;
+    padding: 10pt;
     padding-top: 20pt;
+
     /* Add padding to create space between the body and the edges */
-    background-color: #EBEBEB;
+    background-color: #FDF9ED;
     /* Light Gray Background */
     min-height: 100vh;
     /* Ensure the body covers the full height of the viewport */
@@ -26,8 +28,6 @@ header {
     text-align: center;
     position: relative;
     padding: 40px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Optional shadow for depth */
     border-radius: 0;
     /* Remove rounded edges */
 }
@@ -59,12 +59,6 @@ header {
 
 .content-container .wordmark {
     color: #FDF9ED;
-}
-
-/* Specific Styles for the Stats Section */
-.content-container.stats-section {
-    background-color: #FDF9ED;
-    /* Cream background */
 }
 
 /* Section Content Specific Styles */
