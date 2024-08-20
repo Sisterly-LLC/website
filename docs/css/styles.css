@@ -4,7 +4,7 @@ body {
     color: #102B4C;
     /* Primary Text Color */
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     /* Add padding to create space between the body and the edges */
     background-color: #EBEBEB;
     /* Light Gray Background */
@@ -14,17 +14,9 @@ body {
     /* Use block layout to allow the header to be at the top */
 }
 
-/* Content Container with Background Image and Color Overlay */
+/* Base Content Container Styles */
 .content-container {
     height: 500px;
-    background-image: url('images/your-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Dark overlay color */
-    background-blend-mode: multiply;
-    /* Blend the overlay with the image */
-    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,33 +25,13 @@ body {
     padding: 40px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     /* Optional shadow for depth */
+    border-radius: 0;
+    /* Remove rounded edges */
 }
 
-/* Content Container with Background Image and Color Overlay */
-.content-container {
-    height: 500px;
-    background-image: url('images/compassion.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(16, 43, 76, 0.5);
-    /* Primary Text Color with Alpha */
-    background-blend-mode: multiply;
-    /* Blend the overlay with the image */
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    padding: 40px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Optional shadow for depth */
-}
-
-/* Overlay Content */
+/* Common Overlay Content Styles */
 .overlay-content {
     padding: 20px;
-    border-radius: 8px;
     color: #FDF9ED;
     /* Ensure cream color for all text */
 }
@@ -71,32 +43,65 @@ body {
     /* Force cream color for title, subtitle, and description */
 }
 
-.overlay-title {
-    font-size: 36pt;
-    font-weight: 700;
-    margin-bottom: 10px;
+/* Specific Styles for the First Section */
+.content-container.we-are-section {
+    background-image: url('../images/compassion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(16, 43, 76, 0.5);
+    /* Primary Text Color with Alpha */
+    background-blend-mode: multiply;
 }
 
-.overlay-subtitle {
-    font-size: 24pt;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.overlay-subtitle .wordmark {
+.content-container .wordmark {
     color: #FDF9ED;
 }
 
-.overlay-description {
+/* Specific Styles for the Stats Section */
+.content-container.stats-section {
+    background-color: #FDF9ED;
+    /* Cream background */
+}
+
+/* Section Content Specific Styles */
+.section-content {
+    max-width: 800px;
+    /* Limit width of content */
+}
+
+.section-description {
     font-size: 14pt;
+    color: #102B4C;
+    /* Primary text color */
+    margin-bottom: 30px;
+    /* Space below the description text */
     line-height: 1.6;
-    margin-bottom: 20px;
 }
 
-.overlay-buttons {
-    margin-top: 20px;
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
+.stat {
+    text-align: center;
+}
+
+.stat-header {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #102B4C;
+    /* Primary text color */
+}
+
+.stat-value {
+    font-size: 18pt;
+    color: #256A93;
+    /* Teal blue color */
+}
+
+/* Button Styles */
 .button.cta-button {
     background-color: #256A93;
     color: #FDF9ED;
@@ -117,7 +122,7 @@ body {
 
 .button.cta-button:hover {
     background-color: #102B4C;
-    /* Change background to #5A2C6C on hover */
+    /* Change background to match menu hover */
 }
 
 .button.secondary-button {
@@ -138,7 +143,7 @@ body {
 
 .button.secondary-button:hover {
     background-color: #102B4C;
-    /* Change background to #5A2C6C on hover */
+    /* Change background to match menu hover */
     color: #FDF9ED;
     /* Change text to cream on hover */
 }
@@ -214,6 +219,7 @@ a:hover {
     /* Sky Blue for Hover */
 }
 
+/* Menu Styles */
 .menu {
     display: flex;
     list-style: none;
@@ -269,29 +275,6 @@ a:hover {
     /* Expand the underline on hover */
 }
 
-/* Button Styles */
-button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14pt;
-    /* As per button/CTA guidelines */
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #FDF9ED;
-    /* Creamy White text */
-    background-color: #5A2C6C;
-    /* Purple Accent Color */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    /* Rounded corners */
-}
-
-button:hover {
-    background-color: #8F418D;
-    /* Light Purple for Hover */
-}
-
 /* Logo and Wordmark */
 .logo img {
     height: 32px;
@@ -307,47 +290,4 @@ button:hover {
     color: #102B4C;
     /* Dark Blue for light backgrounds */
     margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #FFFFFF;
-        /* White Background */
-        border: 1px solid #ddd;
-        width: 200px;
-        display: none;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu li {
-        margin: 10px 0;
-    }
-}
-
-/* Additional Bulma Overrides (if needed) */
-/* For example, to ensure consistent button sizes, you might use: */
-.button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14pt;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #FDF9ED;
-    /* Creamy White text */
-    background-color: #5A2C6C;
-    /* Purple Accent Color */
-    border-radius: 4px;
-    /* Rounded corners */
-}
-
-.button:hover {
-    background-color: #8F418D;
-    /* Light Purple for Hover */
 }
