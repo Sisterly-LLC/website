@@ -14,32 +14,133 @@ body {
     /* Use block layout to allow the header to be at the top */
 }
 
-/* Container for White Box */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    /* White Content Box */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Subtle Shadow for Depth */
+/* Content Container with Background Image and Color Overlay */
+.content-container {
+    height: 500px;
+    background-image: url('images/your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay color */
+    background-blend-mode: multiply;
+    /* Blend the overlay with the image */
     border-radius: 8px;
-    /* Rounded Corners */
-    margin: 20px auto;
-    /* Center the container horizontally with a bit of margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for depth */
 }
 
-/* Header at the top with margin */
-header {
+/* Content Container with Background Image and Color Overlay */
+.content-container {
+    height: 500px;
+    background-image: url('images/compassion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(16, 43, 76, 0.5);
+    /* Primary Text Color with Alpha */
+    background-blend-mode: multiply;
+    /* Blend the overlay with the image */
+    border-radius: 8px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    /* Internal padding within the header */
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for depth */
+}
+
+/* Overlay Content */
+.overlay-content {
+    padding: 20px;
+    border-radius: 8px;
+    color: #FDF9ED;
+    /* Ensure cream color for all text */
+}
+
+.overlay-content h2,
+.overlay-content h3,
+.overlay-content p {
+    color: #FDF9ED;
+    /* Force cream color for title, subtitle, and description */
+}
+
+.overlay-title {
+    font-size: 36pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.overlay-subtitle {
+    font-size: 24pt;
+    font-weight: 400;
     margin-bottom: 20px;
-    /* Add space below the header */
-    background-color: transparent;
-    /* Transparent header background */
+}
+
+.overlay-subtitle .wordmark {
+    color: #FDF9ED;
+}
+
+.overlay-description {
+    font-size: 14pt;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.overlay-buttons {
+    margin-top: 20px;
+}
+
+.button.cta-button {
+    background-color: #256A93;
+    color: #FDF9ED;
+    /* Cream color text */
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12pt;
+    /* Reduced font size by 2pt */
+    text-decoration: none;
+    border: none;
+    /* No border */
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 10px;
+    /* Add space between buttons */
+}
+
+.cta-button:hover {
+    background-color: #5A2C6C;
+    /* Change background to #5A2C6C on hover */
+}
+
+.button.secondary-button {
+    background-color: #FDF9ED;
+    /* Cream background */
+    color: #256A93;
+    /* Normal text color */
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12pt;
+    /* Reduced font size by 2pt */
+    text-decoration: none;
+    border: none;
+    /* No border */
+}
+
+.secondary-button:hover {
+    background-color: #5A2C6C;
+    /* Change background to #5A2C6C on hover */
+    color: #FDF9ED;
+    /* Change text to cream on hover */
 }
 
 /* Typography */
@@ -134,8 +235,7 @@ a:hover {
     /* Lighter color for default state */
     font-weight: 600;
     /* Menu items at weight 600 */
-    font-size: 16pt;
-    /* Consistent with the smallest heading */
+    font-size: 14pt;
     position: relative;
     /* Required for the underline effect */
     text-transform: uppercase;
