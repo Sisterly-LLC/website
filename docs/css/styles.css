@@ -146,18 +146,17 @@ header {
 .footer {
     background-color: #102B4C;
     /* Dark blue background */
-    padding: 40pt 20pt 0;
+    padding: 20pt 20pt 0;
     color: #FDF9ED;
     /* Cream color text */
     text-align: center;
 }
 
 .footer strong {
-    color: #256A93;
+    color: #FDF9ED;
 }
 
 .footer .content {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
