@@ -386,10 +386,60 @@ a:hover {
     margin: 0;
 }
 
+@keyframes fadeOutIn {
+
+    0%,
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    45%,
+    55% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    60%,
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.underline-wrapper {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    /* Prevent extra height */
+    vertical-align: baseline;
+    /* Align with the baseline of surrounding text */
+}
+
 .highlight-different {
-    /* color: #5A2C6C; */
-    /* Purple accent color */
-    text-decoration: underline;
-    text-decoration-color: #256A93;
-    /* Teal blue underline */
+    display: inline-block;
+    width: 197pt;
+    /* Adjust based on the longest word */
+    text-align: left;
+    animation: fadeOutIn 5s ease-in-out infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    vertical-align: baseline;
+    /* Ensure text aligns with the baseline of surrounding text */
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2pt;
+    background-color: #256A93;
+    /* The color of the underline */
+    z-index: 0;
+    /* Keep underline behind the text */
+    pointer-events: none;
+    /* Prevent interaction with the underline */
 }
