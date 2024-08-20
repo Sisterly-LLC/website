@@ -47,7 +47,7 @@ header {
     background-image: url('../images/compassion.jpg');
     background-size: cover;
     background-position: center;
-    background-color: rgba(16, 43, 76, 0.5);
+    background-color: rgba(16, 43, 76, 0.7);
     /* Primary Text Color with Alpha */
     background-blend-mode: multiply;
     min-height: 500px;
@@ -142,61 +142,105 @@ header {
     /* Change text to cream on hover */
 }
 
-/* Contact Section */
-.content-container.contact-section {
-    background-color: #5A2C6C;
-    /* Dark Blue Background */
-    padding: 40px 20px;
-    border-radius: 8pt;
+/* Footer Styles */
+.footer {
+    background-color: #102B4C;
+    /* Dark blue background */
+    padding: 40pt 20pt 0;
+    color: #FDF9ED;
+    /* Cream color text */
+    text-align: center;
 }
 
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    /* Make items the same height */
+.footer strong {
+    color: #256A93;
+}
+
+.footer .content {
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.contact-item {
-    background-color: #FDF9ED;
-    /* Slightly lighter dark blue for contrast */
-    color: #FDF9ED;
-    /* Cream color for text */
-    flex: 1;
-    max-width: 22%;
-    /* Adjust width for better spacing */
-    min-width: 250px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    /* Optional: add some rounding for a smoother look */
-    text-align: center;
+.footer .logo-column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center align all content */
+    /* Center align logo and wordmark */
 }
 
-.contact-icon {
-    font-size: 36px;
-    /* Make icons larger */
-    margin-bottom: 20px;
-    color: #256A93;
-    /* Optional: Add a different color for icons */
+.footer .logo-link img {
+    height: 64px;
+    width: auto;
+    margin-bottom: 10px;
+    /* Add space between logo and wordmark */
 }
 
-.contact-header {
-    font-size: 16pt;
-    font-weight: 700;
+.footer-wordmark {
+    font-family: 'Bad Script', cursive;
+    font-size: 24pt;
+    /* Slightly smaller than header */
+    color: #FDF9ED;
+    /* Cream color */
+    margin: 0;
+}
+
+.footer-contact {
+    font-size: 14pt;
+    /* Match body font size */
+    line-height: 1.6;
+    color: #FDF9ED;
+    /* Ensure cream text for legibility */
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu li {
     margin-bottom: 10px;
 }
 
-.contact-item p {
+.footer-menu a {
+    color: #FDF9ED;
+    text-decoration: none;
+    font-weight: 600;
     font-size: 14pt;
-    margin: 5px 0;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-contact a {
+    color: #FDF9ED;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #256A93;
+}
+
+.footer-menu a:hover {
+    color: #256A93;
+}
+
+.footer-bottom {
+    font-size: 12pt;
+    /* Slightly smaller for the copyright notice */
+    color: #FDF9ED;
+    /* Ensure legibility */
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: inherit;
+    /* Slightly smaller for the copyright notice */
+    color: inherit;
+    /* Ensure legibility */
 }
 
 /* Typography */
@@ -341,4 +385,12 @@ a:hover {
     color: #102B4C;
     /* Dark Blue for light backgrounds */
     margin: 0;
+}
+
+.highlight-different {
+    /* color: #5A2C6C; */
+    /* Purple accent color */
+    text-decoration: underline;
+    text-decoration-color: #256A93;
+    /* Teal blue underline */
 }
