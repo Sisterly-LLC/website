@@ -1,0 +1,230 @@
+/* Ensure the body background fills the entire window */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #102B4C;
+    /* Primary Text Color */
+    margin: 0;
+    padding: 0;
+    background-color: #EBEBEB;
+    /* Light Gray Background */
+    min-height: 100vh;
+    /* Ensure the body covers the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for White Box */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    /* White Content Box */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle Shadow for Depth */
+    border-radius: 8px;
+    /* Rounded Corners */
+    margin: 20px;
+    /* Add a bit of space around the container */
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #102B4C;
+    /* Primary Text Color */
+    letter-spacing: 1.5px;
+    /* Increased for readability */
+}
+
+h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 36pt;
+    /* H1 Size */
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30pt;
+    /* H2 Size */
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24pt;
+    /* H3 Size */
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20pt;
+    /* H4 Size */
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 16pt;
+    /* H5 Size */
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 14pt;
+    /* H6 Size */
+    font-weight: 700;
+}
+
+p {
+    font-size: 12pt;
+    /* Default Body Text Size */
+    line-height: 1.5;
+    /* 1.5x the font size */
+    margin: 0 0 1em 0;
+    color: #102B4C;
+    /* Primary Text Color */
+}
+
+a {
+    color: #256A93;
+    /* Teal Blue for Links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #46ACCA;
+    /* Sky Blue for Hover */
+}
+
+/* Menu Styling */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #102B4C;
+    /* Primary Text Color */
+    font-weight: 600;
+    /* Menu items at weight 600 */
+    font-size: 16pt;
+    /* Consistent with the smallest heading */
+    position: relative;
+    /* Required for the underline effect */
+    text-transform: uppercase;
+    /* Force all caps */
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    /* Thickness of the underline */
+    background-color: #102B4C;
+    /* Color of the underline */
+    bottom: -2px;
+    /* Position the underline just below the text */
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.menu a:hover::after {
+    width: 100%;
+    /* Expand the underline on hover */
+}
+
+/* Button Styles */
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    /* As per button/CTA guidelines */
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FDF9ED;
+    /* Creamy White text */
+    background-color: #5A2C6C;
+    /* Purple Accent Color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Rounded corners */
+}
+
+button:hover {
+    background-color: #8F418D;
+    /* Light Purple for Hover */
+}
+
+/* Logo and Wordmark */
+.logo img {
+    height: 32px;
+    margin-right: 10px;
+    /* Ensure minimum height is respected */
+    min-height: 24px;
+}
+
+.wordmark {
+    font-family: 'Bad Script', cursive;
+    font-size: 32pt;
+    /* As per typography guidelines */
+    color: #102B4C;
+    /* Dark Blue for light backgrounds */
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #FFFFFF;
+        /* White Background */
+        border: 1px solid #ddd;
+        width: 200px;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+/* Additional Bulma Overrides (if needed) */
+/* For example, to ensure consistent button sizes, you might use: */
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FDF9ED;
+    /* Creamy White text */
+    background-color: #5A2C6C;
+    /* Purple Accent Color */
+    border-radius: 4px;
+    /* Rounded corners */
+}
+
+.button:hover {
+    background-color: #8F418D;
+    /* Light Purple for Hover */
+}
