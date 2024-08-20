@@ -4,7 +4,7 @@ body {
     color: #102B4C;
     /* Primary Text Color */
     margin: 0;
-    padding: 10px;
+    padding-top: 20pt;
     /* Add padding to create space between the body and the edges */
     background-color: #EBEBEB;
     /* Light Gray Background */
@@ -16,12 +16,6 @@ body {
 
 header {
     padding: 0 30px;
-}
-
-/* Remove padding or margin from the .container.box */
-.container.box {
-    padding: 0;
-    padding-top: 20px
 }
 
 /* Base Content Container Styles */
