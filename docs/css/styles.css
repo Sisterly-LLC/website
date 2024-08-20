@@ -115,8 +115,8 @@ body {
     /* Add space between buttons */
 }
 
-.cta-button:hover {
-    background-color: #5A2C6C;
+.button.cta-button:hover {
+    background-color: #102B4C;
     /* Change background to #5A2C6C on hover */
 }
 
@@ -136,8 +136,8 @@ body {
     /* No border */
 }
 
-.secondary-button:hover {
-    background-color: #5A2C6C;
+.button.secondary-button:hover {
+    background-color: #102B4C;
     /* Change background to #5A2C6C on hover */
     color: #FDF9ED;
     /* Change text to cream on hover */
