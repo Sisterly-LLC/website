@@ -14,6 +14,16 @@ body {
     /* Use block layout to allow the header to be at the top */
 }
 
+header {
+    padding: 0 30px;
+}
+
+/* Remove padding or margin from the .container.box */
+.container.box {
+    padding: 0;
+    padding-top: 20px
+}
+
 /* Base Content Container Styles */
 .content-container {
     height: 500px;
@@ -73,7 +83,7 @@ body {
     font-size: 14pt;
     color: #102B4C;
     /* Primary text color */
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     /* Space below the description text */
     line-height: 1.6;
 }
@@ -89,14 +99,14 @@ body {
 }
 
 .stat-header {
-    font-size: 20pt;
-    font-weight: 700;
+    font-size: 12pt;
     color: #102B4C;
     /* Primary text color */
 }
 
 .stat-value {
-    font-size: 18pt;
+    font-size: 20pt;
+    font-weight: 700;
     color: #256A93;
     /* Teal blue color */
 }
