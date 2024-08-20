@@ -142,6 +142,63 @@ header {
     /* Change text to cream on hover */
 }
 
+/* Contact Section */
+.content-container.contact-section {
+    background-color: #5A2C6C;
+    /* Dark Blue Background */
+    padding: 40px 20px;
+    border-radius: 8pt;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    /* Make items the same height */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: #FDF9ED;
+    /* Slightly lighter dark blue for contrast */
+    color: #FDF9ED;
+    /* Cream color for text */
+    flex: 1;
+    max-width: 22%;
+    /* Adjust width for better spacing */
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    /* Optional: add some rounding for a smoother look */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align all content */
+}
+
+.contact-icon {
+    font-size: 36px;
+    /* Make icons larger */
+    margin-bottom: 20px;
+    color: #256A93;
+    /* Optional: Add a different color for icons */
+}
+
+.contact-header {
+    font-size: 16pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 14pt;
+    margin: 5px 0;
+}
+
 /* Typography */
 h1,
 h2,
