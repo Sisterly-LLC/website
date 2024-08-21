@@ -45,7 +45,7 @@ header {
 /* Specific Styles for the First Section */
 .content-container.we-are-section {
     background-image: url('../images/three-people.jpg');
-    /* Photo by <a href="https://unsplash.com/@nathananderson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nathan Anderson</a> on <a href="https://unsplash.com/photos/photo-of-two-man-and-one-woman-standing-near-tree-GM5Yn5XRVqA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
+    /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/photo-of-two-man-and-one-woman-standing-near-tree-GM5Yn5XRVqA */
     background-size: cover;
     background-position: center;
     background-color: rgba(16, 43, 76, 0.7);
