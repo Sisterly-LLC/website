@@ -144,106 +144,6 @@ header {
     /* Change text to cream on hover */
 }
 
-/* Footer Styles */
-.footer {
-    background-color: #102B4C;
-    /* Dark blue background */
-    padding: 20pt 20pt 0;
-    color: #FDF9ED;
-    /* Cream color text */
-    text-align: center;
-}
-
-.footer strong {
-    color: #FDF9ED;
-}
-
-.footer .content {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.footer .logo-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center align logo and wordmark */
-}
-
-.footer .logo-link img {
-    height: 64px;
-    width: auto;
-    margin-bottom: 10px;
-    /* Add space between logo and wordmark */
-}
-
-.footer-wordmark {
-    font-family: 'Bad Script', cursive;
-    font-size: 24pt;
-    /* Slightly smaller than header */
-    color: #FDF9ED;
-    /* Cream color */
-    margin: 0;
-}
-
-.footer-contact {
-    font-size: 14pt;
-    /* Match body font size */
-    line-height: 1.6;
-    color: #FDF9ED;
-    /* Ensure cream text for legibility */
-}
-
-.footer-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-menu li {
-    margin-bottom: 10px;
-}
-
-.footer-menu a {
-    color: #FDF9ED;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14pt;
-    text-transform: uppercase;
-    transition: color 0.2s ease-in-out;
-}
-
-.footer-contact a {
-    color: #FDF9ED;
-    text-decoration: none;
-}
-
-.footer-contact a:hover {
-    color: #256A93;
-}
-
-.footer-menu a:hover {
-    color: #256A93;
-}
-
-.footer-bottom {
-    font-size: 12pt;
-    /* Slightly smaller for the copyright notice */
-    color: #FDF9ED;
-    /* Ensure legibility */
-    margin-top: 20px;
-}
-
-.footer-bottom p {
-    font-size: inherit;
-    /* Slightly smaller for the copyright notice */
-    color: inherit;
-    /* Ensure legibility */
-}
-
 /* Testimonial Section */
 .testimonial-section {
     background-color: #E6F0FA;
@@ -323,6 +223,112 @@ header {
         margin-bottom: 20px;
         min-width: 250px;
     }
+}
+
+/* Footer Container */
+.footer {
+    background-color: #102B4C;
+    /* Dark blue background */
+    color: #FDF9ED;
+    /* Cream color text */
+    padding: 40pt 20pt 10pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer p {
+    color: #FDF9ED;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    height: 48px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.footer-wordmark {
+    font-family: 'Bad Script', cursive;
+    font-size: 24pt;
+    color: #FFFFFF;
+    /* Pure white for maximum contrast */
+    margin: 0;
+}
+
+/* Ensuring text in the footer-contact section is readable */
+.footer-contact {
+    font-size: 14pt;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #FDF9ED !important;
+    /* Force cream color for readability */
+}
+
+.footer-contact a {
+    color: #FDF9ED !important;
+    /* Ensure links are the same cream color */
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #46ACCA !important;
+    /* Lighter blue hover color for contrast */
+}
+
+/* Ensure footer menu links are clearly readable */
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-menu li {
+    margin: 0;
+}
+
+.footer-menu a {
+    color: #FFFFFF !important;
+    /* White for clear readability */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14pt;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-menu a:hover {
+    color: #46ACCA !important;
+    /* Light blue hover color */
+}
+
+/* Ensure footer-bottom text is readable */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12pt;
+    color: #FDF9ED !important;
+    /* Force cream color */
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #FDF9ED !important;
+    /* Ensure legibility for copyright notice */
+}
+
+.copyright {
+    font-size: 10pt;
 }
 
 /* Typography */
