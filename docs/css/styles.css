@@ -243,6 +243,87 @@ header {
     /* Ensure legibility */
 }
 
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #F8D6C8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial-title {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #102B4C;
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #FDF9ED;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px);
+    /* Make each box 25% of the container width minus the gaps */
+    max-width: calc(25% - 40px);
+    min-width: 250px;
+    /* Ensure a minimum width for each box */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.testimonial-text {
+    font-size: 14pt;
+    color: #102B4C;
+    font-style: italic;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    /* Allow text to grow and align center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-author {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #256A93;
+    margin-bottom: 5px;
+}
+
+.testimonial-title-company {
+    font-size: 14pt;
+    color: #102B4C;
+    margin-top: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .testimonials {
+        flex-wrap: wrap;
+        /* Allow wrapping on smaller screens */
+    }
+
+    .testimonial {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        min-width: 250px;
+    }
+}
+
 /* Typography */
 h1,
 h2,
