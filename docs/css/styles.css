@@ -52,6 +52,7 @@ header {
     /* Primary Text Color with Alpha */
     background-blend-mode: multiply;
     min-height: 500px;
+    border-radius: 8px;
 }
 
 .content-container .wordmark {
