@@ -1,8 +1,8 @@
-const words = ["creative.", "brave.", "determined.", "different.", "Sisterly."];
+const words = ["different.", "creative.", "brave.", "determined.", "Sisterly."];
 
 
 
-let currentIndex = 0;
+let currentIndex = 1;
 const wordElement = document.getElementById('cycling-words');
 const duration = 5000; // 5 seconds
 
