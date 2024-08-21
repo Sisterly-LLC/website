@@ -414,6 +414,7 @@ a:hover {
     /* Prevent extra height */
     vertical-align: baseline;
     /* Align with the baseline of surrounding text */
+    transform: translateY(4.5pt);
 }
 
 .highlight-different {
