@@ -390,22 +390,21 @@ a:hover {
 .underline-wrapper {
     position: relative;
     display: inline-block;
+    width: 204pt;
+    text-align: left;
     line-height: 1;
     /* Prevent extra height */
-    vertical-align: baseline;
-    /* Align with the baseline of surrounding text */
-    transform: translateY(4.5pt);
+    vertical-align: text-bottom;
+    transform: translateY(-3.25pt);
 }
 
 .highlight-different {
-    display: inline-block;
-    width: 204pt;
-    text-align: left;
+    height: 30pt;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
     z-index: 1;
-    vertical-align: baseline;
+    vertical-align: text-bottom;
 }
 
 .underline {

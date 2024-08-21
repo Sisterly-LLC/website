@@ -1,4 +1,7 @@
-const words = ["creative.", "brave.", "determined.", "different."];
+const words = ["creative.", "brave.", "determined.", "different.", "Sisterly."];
+
+
+
 let currentIndex = 0;
 const wordElement = document.getElementById('cycling-words');
 const duration = 5000; // 5 seconds
@@ -10,6 +13,13 @@ function cycleWords() {
 
     setTimeout(() => {
         wordElement.textContent = words[currentIndex];
+
+        const wordmarkClass = "wordmark";
+        if (currentIndex == 4) {
+            wordElement.classList.add(wordmarkClass);
+        } else {
+            wordElement.classList.remove(wordmarkClass);
+        }
 
         // Fade in
         wordElement.style.transition = 'opacity 2.5s ease-in-out';
