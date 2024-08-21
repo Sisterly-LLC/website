@@ -44,7 +44,8 @@ header {
 
 /* Specific Styles for the First Section */
 .content-container.we-are-section {
-    background-image: url('../images/compassion.jpg');
+    background-image: url('../images/three-people.jpg');
+    /* Photo by <a href="https://unsplash.com/@nathananderson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nathan Anderson</a> on <a href="https://unsplash.com/photos/photo-of-two-man-and-one-woman-standing-near-tree-GM5Yn5XRVqA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
     background-size: cover;
     background-position: center;
     background-color: rgba(16, 43, 76, 0.7);
@@ -386,27 +387,6 @@ a:hover {
     margin: 0;
 }
 
-@keyframes fadeOutIn {
-
-    0%,
-    40% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    45%,
-    55% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    60%,
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .underline-wrapper {
     position: relative;
     display: inline-block;
@@ -419,16 +399,13 @@ a:hover {
 
 .highlight-different {
     display: inline-block;
-    width: 197pt;
-    /* Adjust based on the longest word */
+    width: 204pt;
     text-align: left;
-    animation: fadeOutIn 5s ease-in-out infinite;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
     z-index: 1;
     vertical-align: baseline;
-    /* Ensure text aligns with the baseline of surrounding text */
 }
 
 .underline {
@@ -442,5 +419,4 @@ a:hover {
     z-index: 0;
     /* Keep underline behind the text */
     pointer-events: none;
-    /* Prevent interaction with the underline */
 }

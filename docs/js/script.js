@@ -1,24 +1,30 @@
-const words = ["creative", "brave", "determined", "different"];
+const words = ["creative.", "brave.", "determined.", "different."];
 let currentIndex = 0;
+const wordElement = document.getElementById('cycling-words');
+const duration = 5000; // 5 seconds
 
 function cycleWords() {
-    const wordElement = document.getElementById('cycling-words');
-
-    // Start fade out animation
+    // Fade out
+    wordElement.style.transition = 'opacity 2.5s ease-in-out';
     wordElement.style.opacity = 0;
 
-    // Change word after fade out is complete
     setTimeout(() => {
         wordElement.textContent = words[currentIndex];
-        currentIndex = (currentIndex + 1);
-        if (currentIndex > words.length - 1) {
-            currentIndex = 0;
-        }
 
-        // Start fade in animation
+        // Fade in
+        wordElement.style.transition = 'opacity 2.5s ease-in-out';
         wordElement.style.opacity = 1;
-    }, 2500); // Change the word after 2.5 seconds
+
+        // Update the word after fade out
+        currentIndex += 1;
+        if (currentIndex >= words.length) {
+            currentIndex = 0; // Reset index if it exceeds the word count
+        }
+    }, duration / 2); // Timing to match the fade-out duration
+
+    // Schedule the next word change
+    setTimeout(cycleWords, duration);
 }
 
-cycleWords();
-setInterval(cycleWords, 5000);
+// Start the initial animation
+setTimeout(cycleWords, duration / 2);
