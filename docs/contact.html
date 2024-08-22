@@ -80,35 +80,49 @@
                         <img src="images/heart.svg" alt="Heart Icon" class="heart-icon-inline">
                         <span class="vision-mission-title-text">Send&nbsp;us&nbsp;a&nbsp;Message</span>
                     </h2>
-                    <form action="your_form_handling_script.php" method="POST" class="box">
+                    <form
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSc55KDebVBs-eiqega2D9VcQgOQPFJYsQjFaszgWpejgiv7tA/formResponse"
+                        method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="field">
                             <label for="name" class="label">Name <span class="has-text-danger">*</span></label>
                             <div class="control">
-                                <input class="input" type="text" id="name" name="name" required>
+                                <input class="input" type="text" id="name" name="entry.1341531154" required>
                             </div>
                         </div>
                         <div class="field">
                             <label for="email" class="label">Email <span class="has-text-danger">*</span></label>
                             <div class="control">
-                                <input class="input" type="email" id="email" name="email" required>
+                                <input class="input" type="email" id="email" name="entry.421031404" required>
                             </div>
                         </div>
                         <div class="field">
                             <label for="phone" class="label">Phone <span class="has-text-danger">*</span></label>
                             <div class="control">
-                                <input class="input" type="tel" id="phone" name="phone" required>
+                                <input class="input" type="tel" id="phone" name="entry.48590396" required>
                             </div>
                         </div>
                         <div class="field">
                             <label for="message" class="label">Message <span class="has-text-danger">*</span></label>
                             <div class="control">
-                                <textarea class="textarea" id="message" name="message" rows="5" required></textarea>
+                                <textarea class="textarea" id="message" name="entry.1829719757" rows="5"
+                                    required></textarea>
                             </div>
                         </div>
                         <div class="control">
                             <button class="button is-info is-fullwidth" type="submit">Send</button>
                         </div>
                     </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    <script type="text/javascript">
+                        var submitted = false;
+                        function afterSubmit() {
+                            if (submitted) {
+                                alert('Form submitted successfully!');
+                            }
+                        }
+                    </script>
+
                 </div>
             </div>
         </div>
