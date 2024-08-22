@@ -268,7 +268,183 @@ header {
     }
 }
 
-/* About Us Content Section */
+/* Commitment Section */
+.content-container.commitment-section {
+    background-image: url('../images/two-men-laughing.jpg');
+    /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/two-man-laughing-at-each-other-FHiJWoBodrs */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(16, 43, 76, 0.6);
+    /* Primary Text Color with Alpha */
+    background-blend-mode: multiply;
+    min-height: 500px;
+    border-radius: 8px;
+}
+
+.overlay-title.commitment-description {
+    color: #FDF9ED;
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+    background-color: #E6F0FA;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.who-we-are-title {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #102B4C;
+    margin-bottom: 40px;
+}
+
+.who-we-ares {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.who-we-are {
+    background-color: #FDF9ED;
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    min-width: 250px;
+    box-sizing: border-box;
+    text-align: left;
+    /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensure content is spaced between top and bottom */
+    align-items: flex-start;
+    /* Align items to the left */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.who-we-are-item-text {
+    font-size: 13pt;
+    color: #102B4C;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    align-self: flex-start;
+    /* Pin to the top left */
+    text-align: left;
+}
+
+.who-we-are-item-title {
+    font-size: 15pt;
+    font-weight: 600;
+    color: #256A93;
+    margin-bottom: 0px;
+    margin-top: auto;
+    /* Pushes the author to the bottom */
+    align-self: flex-start;
+    /* Aligns to the left */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .who-we-are {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .who-we-are-title {
+        font-size: 14pt;
+    }
+}
+
+/* Our Crew Section */
+.our-crew-section {
+    background-color: #E6F0FA;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.our-crew-title {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #102B4C;
+    margin-bottom: 40px;
+}
+
+.our-crew {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.our-crew-item {
+    background-color: #FDF9ED;
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    min-width: 250px;
+    box-sizing: border-box;
+    text-align: left;
+    /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensure content is spaced between top and bottom */
+    align-items: flex-start;
+    /* Align items to the left */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.our-crew-item-title {
+    font-size: 13pt;
+    color: #102B4C;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    align-self: flex-start;
+    /* Pin to the top left */
+    text-align: left;
+}
+
+.our-crew-item-name {
+    font-size: 15pt;
+    font-weight: 600;
+    color: #256A93;
+    margin-bottom: 0px;
+    margin-top: auto;
+    /* Pushes the author to the bottom */
+    align-self: flex-start;
+    /* Aligns to the left */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .our-crew-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .our-crew-name {
+        font-size: 14pt;
+    }
+}
+
 .about-section {
     padding: 60px 20px;
     color: #102B4C;
