@@ -64,7 +64,7 @@ header {
     /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/photo-of-two-man-and-one-woman-standing-near-tree-GM5Yn5XRVqA */
     background-size: cover;
     background-position: center;
-    background-color: rgba(16, 43, 76, 0.7);
+    background-color: rgba(16, 43, 76, 0.5);
     /* Primary Text Color with Alpha */
     background-blend-mode: multiply;
     min-height: 500px;
