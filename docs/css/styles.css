@@ -243,7 +243,7 @@ header {
     padding: 25px;
     flex: 1 1 calc(25% - 40px);
     max-width: calc(25% - 40px);
-    min-width: 250px;
+    min-width: 270px;
     box-sizing: border-box;
     text-align: left;
     /* Align text to the left */
