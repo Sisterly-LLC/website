@@ -697,6 +697,7 @@ address {
 
 address h6.wordmark {
     margin-left: 0px;
+    font-size: 16pt;
 }
 
 .contact-info a:hover {
