@@ -21,6 +21,11 @@ body {
     box-sizing: border-box;
 }
 
+.box {
+    background-color: #FDF9ED;
+    box-shadow: none;
+}
+
 /* Ensure the body background fills the entire window */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -604,7 +609,7 @@ header {
 /* Contact Info Section */
 .content-container.contact-hero-section {
     background-image: url('../images/yellow-shirt.jpg');
-    /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/two-man-laughing-at-each-other-FHiJWoBodrs */
+    /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/woman-in-yellow-tshirt-Q0cObwlmQBE */
     background-size: cover;
     background-position: center;
     background-color: rgba(16, 43, 76, 0.6);
@@ -614,91 +619,166 @@ header {
     border-radius: 8px;
 }
 
+/* Contact Section Grid Layout using Bulma */
 .contact-info-section {
-    background-color: transparent;
-    /* Keeping it transparent as it is aligned with the other sections */
-    padding: 40px 20px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Information Styling */
+.contact-info {
+    /* Background color */
+    color: #102B4C;
+    /* Text color adjusted according to the style guide */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    /* Padding for spacing */
+    height: 100%;
+    /* Ensure it fills the full height */
+}
+
+.contact-section-title {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #102B4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    /* Space for the underline */
+    text-align: center;
+    position: relative;
+    /* Positioning for the entire title */
+}
+
+.contact-title {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #102B4C;
+    /* Text color */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
     text-align: center;
 }
 
-.contact-info-section .overlay-content h2 {
-    color: #102B4C;
-    font-size: 24pt;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.contact-info-section .overlay-content p {
-    font-size: 14pt;
-    color: #102B4C;
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-.contact-info-section .overlay-content i {
-    color: #256A93;
-}
-
-/* Contact Form Section */
-.contact-form-section {
-    background-color: #E6F0FA;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 8px;
-}
-
-.contact-form-section .overlay-content h2 {
-    color: #102B4C;
-    font-size: 24pt;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.contact-form-section .overlay-content .field {
-    margin-bottom: 20px;
-}
-
-.contact-form-section .overlay-content .label {
-    font-size: 14pt;
-    color: #102B4C;
-    font-weight: 600;
-    text-align: left;
-    display: block;
-}
-
-.contact-form-section .overlay-content .input,
-.contact-form-section .overlay-content .textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #102B4C;
-    background-color: #FDF9ED;
-    border-radius: 4px;
-    font-size: 14pt;
-    color: #102B4C;
-}
-
-.contact-form-section .overlay-content .button {
-    background-color: #256A93;
-    color: #FDF9ED;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12pt;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.contact-form-section .overlay-content .button:hover {
+.contact-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
     background-color: #102B4C;
+    /* Underline matching the text color */
 }
 
-.contact-form-section .overlay-content p {
-    margin-top: 20px;
-    font-size: 14pt;
+.contact-icon {
     color: #102B4C;
-    line-height: 1.6;
+    /* Icon color consistent with the text */
+    margin-right: 10px;
+    font-size: 16pt;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.8;
+    color: #102B4C;
+    /* Text color */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+address h6 {
+    text-align: center;
+    padding-left: 5px;
+}
+
+.office-hours {
+    margin-top: 30px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 60px;
+    /* Added padding for spacing */
+    color: #333333;
+    /* Ensure form text is readable */
+}
+
+.form-title {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #102B4C;
+    /* Darker text color to stand out against the form */
+    margin-bottom: 0;
+    /* Removed excess white space */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #256A93;
+    /* Underline matching the section color */
+}
+
+.contact-title-text {
+    position: relative;
+    /* Positioning for the underline */
+}
+
+.contact-title-text::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #256A93;
+    /* Matches the underline color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info-section {
+        height: auto;
+        /* Allow auto height for smaller screens */
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+    .columns.is-vcentered {
+        flex-direction: column;
+        /* Stack columns on smaller screens */
+    }
+
+    .contact-title,
+    .form-title {
+        text-align: center;
+    }
 }
 
 /* Footer Container */
@@ -1003,6 +1083,20 @@ a:hover {
 .column.is-narrow {
     flex-shrink: 0;
     /* Ensure that the narrow column only takes up as much space as needed */
+}
+
+.columns.is-vcentered {
+    display: flex;
+    align-items: stretch;
+    /* This ensures the columns stretch to be the same height */
+}
+
+.column.contact-info,
+.column.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Ensures the content is centered vertically */
 }
 
 .underline-wrapper {

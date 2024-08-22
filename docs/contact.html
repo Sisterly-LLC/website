@@ -28,9 +28,9 @@
         <div class="column">
             <nav>
                 <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,54 +44,72 @@
                 Are you a caregiver for an adult with a developmental disability? Interested in helping us achieve our
                 vision? Give us a call or drop us an email. We'd love to talk!
             </p>
+            <div class="overlay-buttons">
+                <a href="contact.html" class="button cta-button">Contact Us Today</a>
+            </div>
         </div>
     </section>
 
-    <section class="contact-info-section content-container">
-        <div class="overlay-content">
-            <h2>Contact Us</h2>
-            <p><i class="fas fa-envelope"></i>&nbsp;<a
-                    href="mailto:hello@wearesisterly.com">hello@wearesisterly.com</a><br>
-                <i class="fas fa-phone"></i>&nbsp;<a href="tel:5136467879">513-646-7879</a><br>
-                <i class="fas fa-map-marker-alt"></i>&nbsp;4492 Mt. Zion Rd, Cleves, OH 45002
-            </p>
-            <p><i class="fas fa-clock"></i>&nbsp;Office Hours: Monday - Friday 9:00 AM - 4:00 PM</p>
-        </div>
-    </section>
+    <section id="contact-section" class="section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <!-- Contact Information -->
+                <div class="column is-4 contact-info">
+                    <h2 class="contact-section-title">
+                        <img src="images/heart.svg" alt="Heart Icon" class="heart-icon-inline">
+                        <span class="contact-title-text">Connect&nbsp;With&nbsp;Us</span>
+                    </h2>
+                    <address>
+                        <h6 class="wordmark">Sisterly</h6>
+                        <p><i class="fas fa-map-marker-alt contact-icon"></i>4492 Mt. Zion Rd, Cleves, OH 45002</p>
+                        <p><i class="fas fa-phone contact-icon"></i><a href="tel:5136467879"
+                                class="has-text-dark">513-646-7879</a></p>
+                        <p><i class="fas fa-envelope contact-icon"></i><a href="mailto:hello@wearesisterly.com"
+                                class="has-text-dark">hello@wearesisterly.com</a></p>
+                    </address>
+                    <div class="office-hours">
+                        <h3 class="subtitle is-6">Office Hours</h3>
+                        <p><i class="fas fa-clock contact-icon"></i>Monday - Friday, 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
 
-    <section class="contact-form-section content-container" style="background-color: #E6F0FA;">
-        <div class="overlay-content">
-            <h2>Get in Touch</h2>
-            <form action="your_form_handling_script.php" method="POST">
-                <div class="field">
-                    <label class="label" for="name">Name</label>
-                    <div class="control">
-                        <input class="input" type="text" id="name" name="name" required>
-                    </div>
+                <!-- Contact Form -->
+                <div class="column is-8 contact-form">
+                    <h2 class="contact-section-title">
+                        <img src="images/heart.svg" alt="Heart Icon" class="heart-icon-inline">
+                        <span class="vision-mission-title-text">Send&nbsp;us&nbsp;a&nbsp;Message</span>
+                    </h2>
+                    <form action="your_form_handling_script.php" method="POST" class="box">
+                        <div class="field">
+                            <label for="name" class="label">Name <span class="has-text-danger">*</span></label>
+                            <div class="control">
+                                <input class="input" type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="email" class="label">Email <span class="has-text-danger">*</span></label>
+                            <div class="control">
+                                <input class="input" type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="phone" class="label">Phone <span class="has-text-danger">*</span></label>
+                            <div class="control">
+                                <input class="input" type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="message" class="label">Message <span class="has-text-danger">*</span></label>
+                            <div class="control">
+                                <textarea class="textarea" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <button class="button is-info is-fullwidth" type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="field">
-                    <label class="label" for="email">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" id="email" name="email" required>
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label" for="phone">Phone Number</label>
-                    <div class="control">
-                        <input class="input" type="tel" id="phone" name="phone" required>
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label" for="message">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" id="message" name="message" rows="5" required></textarea>
-                    </div>
-                </div>
-                <div class="control">
-                    <button class="button cta-button" type="submit">Submit</button>
-                </div>
-                <p>For immediate assistance, please call us at <a href="tel:5136467879">513-646-7879</a>.</p>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -113,9 +131,9 @@
             </div>
             <div class="footer-menu">
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -125,6 +143,13 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Scroll to contact section when CTA button is clicked
+        document.querySelector('.cta-button').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 
 </html>
