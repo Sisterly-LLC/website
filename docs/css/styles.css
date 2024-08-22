@@ -21,6 +21,10 @@ body {
     box-sizing: border-box;
 }
 
+nav {
+    padding-top: 10px;
+}
+
 .box {
     background-color: #FDF9ED;
     box-shadow: none;
