@@ -268,6 +268,54 @@ header {
     }
 }
 
+/* About Us Content Section */
+.about-section {
+    padding: 60px 20px;
+    color: #102B4C;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 36pt;
+    font-weight: 700;
+    color: #102B4C;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.section-intro {
+    font-size: 18pt;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #256A93;
+    position: relative;
+}
+
+.content-subtitle {
+    font-size: 24pt;
+    font-weight: 600;
+    color: #256A93;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.value-list {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.value-list li {
+    font-size: 16pt;
+    margin-bottom: 10px;
+    color: #102B4C;
+}
+
 /* Footer Container */
 .footer {
     background-color: #102B4C;
