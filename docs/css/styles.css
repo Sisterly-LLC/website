@@ -292,68 +292,63 @@ header {
     text-align: center;
 }
 
-.who-we-are-title {
-    font-size: 24pt;
-    font-weight: 700;
-    color: #102B4C;
-    margin-bottom: 40px;
-}
-
 .who-we-ares {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
     padding: 20px;
 }
 
-.who-we-are {
-    background-color: #FDF9ED;
-    border-radius: 8px;
-    padding: 25px;
+.who-we-are-item {
     flex: 1 1 calc(25% - 40px);
     max-width: calc(25% - 40px);
     min-width: 250px;
     box-sizing: border-box;
-    text-align: left;
-    /* Align text to the left */
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    background-color: #FDF9ED;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Ensure content is spaced between top and bottom */
     align-items: flex-start;
-    /* Align items to the left */
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
 }
 
-.who-we-are-item-text {
-    font-size: 13pt;
+.who-we-are-item:hover {
+    transform: translateY(-10px);
+}
+
+.who-we-are-overlay {
+    position: relative;
+    width: 100%;
+    padding: 10px;
     color: #102B4C;
-    font-style: italic;
-    margin-bottom: 15px;
-    line-height: 1.5;
-    align-self: flex-start;
-    /* Pin to the top left */
     text-align: left;
 }
 
 .who-we-are-item-title {
-    font-size: 15pt;
-    font-weight: 600;
+    font-size: 16pt;
+    font-weight: 700;
     color: #256A93;
-    margin-bottom: 0px;
-    margin-top: auto;
-    /* Pushes the author to the bottom */
-    align-self: flex-start;
-    /* Aligns to the left */
+    margin-bottom: 15px;
 }
 
-/* Responsive Adjustments */
+.who-we-are-item-text {
+    font-size: 14pt;
+    color: #102B4C;
+    font-style: italic;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
-    .who-we-are {
+    .who-we-are-item {
         flex: 1 1 100%;
         max-width: 100%;
         margin-bottom: 20px;
