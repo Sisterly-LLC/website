@@ -76,12 +76,6 @@ header {
     margin-left: 0px;
 }
 
-/* Section Content Specific Styles */
-.section-content {
-    max-width: 800px;
-    /* Limit width of content */
-}
-
 .section-description {
     font-size: 14pt;
     color: #102B4C;
@@ -93,12 +87,31 @@ header {
 
 .statistics {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+
+    /* Adds space between the stats */
+    flex-wrap: wrap;
+    padding: 20px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .stat {
+    padding: 25px;
+    flex: 1 1 calc(25% - 40px);
+    /* Makes each stat take up 25% of the container, minus the gap */
+    max-width: calc(25% - 40px);
+    min-width: 200px;
+    /* Ensures the stats don't get too small on smaller screens */
+    box-sizing: border-box;
     text-align: center;
+    /* Center-aligns the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Subtle shadow for depth */
 }
 
 .stat-header {
