@@ -203,7 +203,7 @@ header {
     font-size: 15pt;
     font-weight: 600;
     color: #256A93;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-top: auto;
     /* Pushes the author to the bottom */
     align-self: flex-start;
