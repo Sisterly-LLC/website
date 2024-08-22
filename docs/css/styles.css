@@ -35,6 +35,22 @@ header {
     /* Ensure cream color for all text */
 }
 
+@media (max-width: 768px) {
+    .overlay-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* Adds 20px margin between the buttons */
+    }
+
+    .cta-button,
+    .secondary-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .overlay-content h2,
 .overlay-content h3,
 .overlay-content p {
@@ -511,6 +527,31 @@ a:hover {
 .logo-img {
     margin-right: 10px;
     /* Adjust spacing between logo and wordmark */
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        justify-content: center;
+        /* Center-align the logo and wordmark */
+        text-align: center;
+    }
+
+    .wordmark {
+        margin-left: 0;
+        /* Remove left margin for centering */
+    }
+
+    .logo-and-wordmark {
+        justify-content: center;
+        /* Center the content within the container */
+        flex-direction: column;
+        /* Stack the logo and wordmark vertically if desired */
+    }
+
+    header {
+        justify-content: center;
+        /* Center the entire header content */
+    }
 }
 
 .column.is-narrow {
