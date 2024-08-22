@@ -695,9 +695,13 @@ address {
     margin-top: 20px;
 }
 
-address h6 {
-    text-align: center;
-    padding-left: 5px;
+address h6.wordmark {
+    margin-left: 0px;
+}
+
+.contact-info a:hover {
+    color: #46ACCA !important;
+    /* Lighter blue hover color for contrast */
 }
 
 .office-hours {
