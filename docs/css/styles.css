@@ -601,6 +601,105 @@ header {
     }
 }
 
+/* Contact Info Section */
+.content-container.contact-hero-section {
+    background-image: url('../images/yellow-shirt.jpg');
+    /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/two-man-laughing-at-each-other-FHiJWoBodrs */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(16, 43, 76, 0.6);
+    /* Primary Text Color with Alpha */
+    background-blend-mode: multiply;
+    min-height: 500px;
+    border-radius: 8px;
+}
+
+.contact-info-section {
+    background-color: transparent;
+    /* Keeping it transparent as it is aligned with the other sections */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-info-section .overlay-content h2 {
+    color: #102B4C;
+    font-size: 24pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-info-section .overlay-content p {
+    font-size: 14pt;
+    color: #102B4C;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.contact-info-section .overlay-content i {
+    color: #256A93;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #E6F0FA;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contact-form-section .overlay-content h2 {
+    color: #102B4C;
+    font-size: 24pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-form-section .overlay-content .field {
+    margin-bottom: 20px;
+}
+
+.contact-form-section .overlay-content .label {
+    font-size: 14pt;
+    color: #102B4C;
+    font-weight: 600;
+    text-align: left;
+    display: block;
+}
+
+.contact-form-section .overlay-content .input,
+.contact-form-section .overlay-content .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #102B4C;
+    background-color: #FDF9ED;
+    border-radius: 4px;
+    font-size: 14pt;
+    color: #102B4C;
+}
+
+.contact-form-section .overlay-content .button {
+    background-color: #256A93;
+    color: #FDF9ED;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12pt;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contact-form-section .overlay-content .button:hover {
+    background-color: #102B4C;
+}
+
+.contact-form-section .overlay-content p {
+    margin-top: 20px;
+    font-size: 14pt;
+    color: #102B4C;
+    line-height: 1.6;
+}
 
 /* Footer Container */
 .footer {
