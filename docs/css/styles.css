@@ -165,23 +165,24 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
-    /* Add padding to give some space around the items */
 }
 
 .testimonial {
     background-color: #FDF9ED;
     border-radius: 8px;
     padding: 25px;
-    /* Increase padding for better spacing */
     flex: 1 1 calc(25% - 40px);
     max-width: calc(25% - 40px);
     min-width: 250px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
+    /* Align text to the left */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    /* Ensure content is spaced between top and bottom */
+    align-items: flex-start;
+    /* Align items to the left */
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Subtle shadow for depth */
@@ -189,37 +190,34 @@ header {
 
 .testimonial-text {
     font-size: 13pt;
-    /* Slightly reduce the font size */
     color: #102B4C;
     font-style: italic;
     margin-bottom: 15px;
-    /* Slightly reduce the margin */
     line-height: 1.5;
-    /* Ensure a consistent line height */
-    flex-grow: 1;
-    /* Allow text to grow and align center */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-self: flex-start;
+    /* Pin to the top left */
+    text-align: left;
 }
 
 .testimonial-author {
     font-size: 15pt;
-    /* Slightly reduce to match the hierarchy */
     font-weight: 600;
     color: #256A93;
-    margin-bottom: 10px;
-    /* Increase space between name and title */
+    margin-bottom: 5px;
+    margin-top: auto;
+    /* Pushes the author to the bottom */
+    align-self: flex-start;
+    /* Aligns to the left */
 }
 
 .testimonial-title-company {
     font-size: 13pt;
-    /* Reduce the font size slightly */
     color: #102B4C;
     margin-top: 0;
     line-height: 1.4;
-    /* Adjust the line height */
+    align-self: flex-start;
+    /* Aligns to the left */
+    margin-bottom: 0px;
 }
 
 /* Responsive Adjustments */
@@ -229,17 +227,14 @@ header {
         max-width: 100%;
         margin-bottom: 20px;
         padding: 15px;
-        /* Adjust padding for smaller screens */
     }
 
     .testimonial-author {
         font-size: 14pt;
-        /* Slightly reduce font size on small screens */
     }
 
     .testimonial-title-company {
         font-size: 12pt;
-        /* Slightly reduce font size on small screens */
     }
 }
 
