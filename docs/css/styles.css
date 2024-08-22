@@ -434,6 +434,12 @@ a:hover {
     /* Ensure the menu takes up the available space */
 }
 
+@media (max-width: 768px) {
+    .menu {
+        justify-content: center;
+    }
+}
+
 .menu li {
     margin-left: 20px;
 }
