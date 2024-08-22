@@ -1,3 +1,13 @@
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    width: 100%;
+    /* Ensure no overflow */
+    margin: 0;
+    padding: 0;
+}
+
 /* Ensure the body background fills the entire window */
 body {
     font-family: 'Montserrat', sans-serif;
