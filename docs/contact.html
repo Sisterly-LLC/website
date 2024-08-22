@@ -80,36 +80,37 @@
                         <img src="images/heart.svg" alt="Heart Icon" class="heart-icon-inline">
                         <span class="vision-mission-title-text">Send&nbsp;us&nbsp;a&nbsp;Message</span>
                     </h2>
-                    <form
+                    <form id="contactForm"
                         action="https://docs.google.com/forms/d/e/1FAIpQLSc55KDebVBs-eiqega2D9VcQgOQPFJYsQjFaszgWpejgiv7tA/formResponse"
                         method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="field">
-                            <label for="name" class="label">Name <span class="has-text-danger">*</span></label>
+                            <label for="name" class="label">Name</label>
                             <div class="control">
                                 <input class="input" type="text" id="name" name="entry.1341531154" required>
                             </div>
                         </div>
                         <div class="field">
-                            <label for="email" class="label">Email <span class="has-text-danger">*</span></label>
+                            <label for="email" class="label">Email</label>
                             <div class="control">
                                 <input class="input" type="email" id="email" name="entry.421031404" required>
                             </div>
                         </div>
                         <div class="field">
-                            <label for="phone" class="label">Phone <span class="has-text-danger">*</span></label>
+                            <label for="phone" class="label">Phone</label>
                             <div class="control">
                                 <input class="input" type="tel" id="phone" name="entry.48590396" required>
                             </div>
                         </div>
                         <div class="field">
-                            <label for="message" class="label">Message <span class="has-text-danger">*</span></label>
+                            <label for="message" class="label">Message</label>
                             <div class="control">
                                 <textarea class="textarea" id="message" name="entry.1829719757" rows="5"
                                     required></textarea>
                             </div>
                         </div>
                         <div class="control">
-                            <button class="button is-info is-fullwidth" type="submit">Send</button>
+                            <button id="submitBtn" class="button is-info is-fullwidth" type="submit"
+                                disabled>Send</button>
                         </div>
                     </form>
 
@@ -163,6 +164,33 @@
         document.querySelector('.cta-button').addEventListener('click', function (event) {
             event.preventDefault();
             document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contactForm");
+            const submitBtn = document.getElementById("submitBtn");
+            const inputs = form.querySelectorAll("input, textarea");
+
+            function validateForm() {
+                // Check if all inputs are valid
+                let allValid = true;
+                inputs.forEach(input => {
+                    if (!input.checkValidity()) {
+                        allValid = false;
+                    }
+                });
+
+                // Enable or disable the submit button
+                submitBtn.disabled = !allValid;
+            }
+
+            // Attach input event listeners to all form fields
+            inputs.forEach(input => {
+                input.addEventListener("input", validateForm);
+            });
+
+            // Validate form on page load in case some fields are already filled
+            validateForm();
         });
     </script>
 </body>
