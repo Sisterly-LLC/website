@@ -57,6 +57,7 @@ header {
 
 .content-container .wordmark {
     color: #FDF9ED;
+    margin-left: 0px;
 }
 
 /* Section Content Specific Styles */
@@ -477,21 +478,38 @@ a:hover {
     /* Expand the underline on hover */
 }
 
-/* Logo and Wordmark */
-.logo img {
-    height: 32px;
-    margin-right: 10px;
-    /* Ensure minimum height is respected */
-    min-height: 24px;
+.logo-container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
+.logo-and-wordmark {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    /* Prevent the logo and wordmark from breaking */
 }
 
 .wordmark {
+    display: inline-block;
     font-family: 'Bad Script', cursive;
     font-size: 32pt;
     /* As per typography guidelines */
     color: #102B4C;
-    /* Dark Blue for light backgrounds */
     margin: 0;
+    margin-left: 20px;
+}
+
+.logo-img {
+    margin-right: 10px;
+    /* Adjust spacing between logo and wordmark */
+}
+
+.column.is-narrow {
+    flex-shrink: 0;
+    /* Ensure that the narrow column only takes up as much space as needed */
 }
 
 .underline-wrapper {
@@ -502,12 +520,10 @@ a:hover {
     line-height: 1;
     /* Prevent extra height */
     vertical-align: text-bottom;
-    transform: translateY(-3.25pt);
+    transform: translateY(-4px);
 }
 
 .highlight-different {
-    height: 30pt;
-    overflow: hidden;
     white-space: nowrap;
     position: relative;
     z-index: 1;
