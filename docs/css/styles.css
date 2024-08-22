@@ -309,7 +309,6 @@ header {
     height: auto;
     overflow: hidden;
     position: relative;
-    transition: transform 0.3s ease-in-out;
     background-color: #FDF9ED;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -319,10 +318,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.who-we-are-item:hover {
-    transform: translateY(-10px);
 }
 
 .who-we-are-overlay {
