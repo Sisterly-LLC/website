@@ -551,6 +551,18 @@ header {
     vertical-align: middle;
 }
 
+.sister-red-icon-inline {
+    width: 36px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.sister-blue-icon-inline {
+    width: 36px;
+    height: auto;
+    vertical-align: middle;
+}
+
 .vision-mission-section-title {
     font-size: 24pt;
     font-weight: 700;
