@@ -523,6 +523,12 @@ a:hover {
     transform: translateY(-4px);
 }
 
+@media (max-width: 610px) {
+    .underline-wrapper {
+        text-align: center;
+    }
+}
+
 .highlight-different {
     white-space: nowrap;
     position: relative;
