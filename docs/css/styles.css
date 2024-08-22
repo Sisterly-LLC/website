@@ -1,11 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
     overflow-x: hidden;
     /* Prevent horizontal scrolling */
+    height: 100%;
     width: 100%;
     /* Ensure no overflow */
     margin: 0;
     padding: 0;
+    min-width: 100vw;
+    min-height: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 /* Ensure the body background fills the entire window */
@@ -15,8 +26,6 @@ body {
     /* Primary Text Color */
     background-color: #FDF9ED;
     /* Light Gray Background */
-    min-height: 100vh;
-    /* Ensure the body covers the full height of the viewport */
     display: block;
     /* Use block layout to allow the header to be at the top */
 }
