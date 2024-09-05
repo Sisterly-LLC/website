@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      pages: write  # Permission for GitHub Pages
-      id-token: write  # Permission to authenticate with GitHub OIDC
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout code
@@ -25,10 +25,6 @@ jobs:
 
       - name: Build project
         run: npm run build
-
-      - name: List all files with sizes
-        run: |
-          find ./docs -type f -exec du -h {} +
 
       - name: Upload build artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v1
@@ -44,4 +40,4 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4  # Use the correct deploy version
+        uses: actions/deploy-pages@v4
