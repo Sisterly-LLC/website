@@ -26,8 +26,9 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: List build files
-        run: ls -R ./docs  # List all files recursively
+      - name: List all files with sizes
+        run: |
+          find ./docs -type f -exec du -h {} +
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
