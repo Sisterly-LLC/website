@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      pages: write  # This is required for deploying to GitHub Pages
-      id-token: write  # This is required for the deploy-pages action to authenticate
+      pages: write  # Permission for GitHub Pages
+      id-token: write  # Permission to authenticate with GitHub OIDC
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -28,7 +28,18 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./docs  # The folder containing your built files
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
-        with:
-          publish_dir: ./docs  # The directory where your build output is stored
