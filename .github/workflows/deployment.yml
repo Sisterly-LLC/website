@@ -26,6 +26,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: List build files
+        run: ls -R ./docs  # List all files recursively
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
