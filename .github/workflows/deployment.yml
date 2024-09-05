@@ -27,7 +27,7 @@ jobs:
         run: npm run build
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages  # Correctly name the artifact as expected
           path: ./docs  # Ensure you're uploading the correct build folder
