@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies (without optional packages)
-        run: npm install --no-optional
+        run: npm install --omit=optional
 
       - name: Build project
         run: npm run build
