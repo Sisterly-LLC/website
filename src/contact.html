@@ -16,13 +16,38 @@
 
 <body>
     <header class="columns is-vcentered">
-        <!-- [Your existing header content] -->
+        <div class="column is-narrow logo-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-and-wordmark">
+                    <figure class="image is-64x64">
+                        <img src="images/logo-fullcolor.svg" alt="Logo" class="logo-img">
+                    </figure>
+                    <h1 class="title wordmark">Sisterly</h1>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <nav>
+                <ul class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="services.html">Services</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Our Commitment Section -->
-    <section class="content-container contact-hero-section">
-        <!-- [Your existing hero section content] -->
-    </section>
+    <div class="overlay-content">
+        <h2 class="overlay-title">Community is just a phone call away!</h2>
+        <p class="overlay-description">
+            Are you a caregiver for an adult with a developmental disability? Interested in helping us achieve our
+            vision? Give us a call or drop us an email. We'd love to talk!
+        </p>
+        <div class="overlay-buttons">
+            <a href="contact.html" class="button cta-button">Contact Us Today</a>
+        </div>
+    </div>
 
     <section id="contact-section" class="section">
         <div class="container">
@@ -106,7 +131,31 @@
     </section>
 
     <footer class="footer">
-        <!-- [Your existing footer content] -->
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/logo-fullcolor.svg" alt="Sisterly Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-wordmark">Sisterly</p>
+            </div>
+            <div class="footer-contact">
+                <p>
+                    <i class="fas fa-envelope"></i>&nbsp;<a
+                        href="mailto:hello@wearesisterly.com">hello@wearesisterly.com</a><br>
+                    <i class="fas fa-phone"></i>&nbsp;<a href="tel:5136467879">513-646-7879</a><br>
+                </p>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="services.html">Services</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 Sisterly LLC. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="js/contact.js"></script>
