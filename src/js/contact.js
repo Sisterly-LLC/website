@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById('email');
     const emailError = document.getElementById('email-error');
 
+    // Phone input elements
+    const phoneInput = document.getElementById('phone');
+
     // Flag to track form submission
     let submitted = false;
 
@@ -89,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * Validates the email input field.
      * Adds or removes visual feedback based on the validity of the email.
      * Only marks as error if the field is populated and invalid.
-     * @returns {boolean} True if the email is valid or empty, false otherwise.
+     * @returns {boolean} True if the email is valid, false otherwise.
      */
     function validateEmail() {
         const emailValue = emailInput.value.trim();
@@ -114,6 +117,61 @@ document.addEventListener("DOMContentLoaded", function () {
             emailError.style.display = 'block';
             return false;
         }
+    }
+
+    /**
+     * Formats the phone number input as the user types.
+     * Allows only numbers. Ignores any non-numeric characters.
+     * Formats in the pattern: 1.513.325.4430 or 513.325.4430
+     * Any extra numbers beyond the original 10 are treated as an extension: ext. XXXX...
+     */
+    function formatPhoneNumber() {
+        let input = phoneInput.value;
+
+        // Remove all non-numeric characters
+        input = input.replace(/\D/g, '');
+
+        let countryCode = '';
+        let mainNumber = '';
+        let extension = '';
+
+        if (input.startsWith('1')) {
+            countryCode = '1';
+            mainNumber = input.substring(1, 11); // Next 10 digits
+            extension = input.substring(11); // Any remaining digits
+        } else {
+            mainNumber = input.substring(0, 10); // First 10 digits
+            extension = input.substring(10); // Any remaining digits
+        }
+
+        // Limit mainNumber to 10 digits
+        if (mainNumber.length > 10) {
+            mainNumber = mainNumber.substring(0, 10);
+        }
+
+        // No cap on extension length
+
+        let formattedNumber = '';
+
+        if (countryCode) {
+            formattedNumber += countryCode + '.';
+        }
+
+        if (mainNumber.length > 0) {
+            formattedNumber += mainNumber.substring(0, 3);
+        }
+        if (mainNumber.length >= 4) {
+            formattedNumber += '.' + mainNumber.substring(3, 6);
+        }
+        if (mainNumber.length >= 7) {
+            formattedNumber += '.' + mainNumber.substring(6, 10);
+        }
+
+        if (extension.length > 0) {
+            formattedNumber += ' ext. ' + extension;
+        }
+
+        phoneInput.value = formattedNumber;
     }
 
     /**
@@ -148,6 +206,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             if (input.id === 'email') {
                 validateEmail();
+            }
+            if (input.id === 'phone') {
+                formatPhoneNumber();
             }
             validateForm();
         });
