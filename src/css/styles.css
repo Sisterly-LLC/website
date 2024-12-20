@@ -945,6 +945,131 @@ address h6.wordmark {
     }
 }
 
+/* Services section */
+.section-title {
+    font-size: 28pt;
+    font-weight: 700;
+    color: #102B4C;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #256A93;
+    border-radius: 2px;
+}
+
+/* Ensure all service cards are flex containers */
+.services-section .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Space between top content and bottom */
+    height: 100%;
+    /* Ensure equal height across all cards */
+    padding: 20px;
+    /* Add padding for better spacing */
+}
+
+/* Style the "Coming Soon" text at the bottom */
+.coming-soon {
+    margin-top: auto;
+    /* Pushes the Coming Soon section to the bottom */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between the icon and text */
+    color: #BD509B;
+    /* Use distinct color */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.coming-soon-icon {
+    width: 24px;
+    /* Adjust size of the icon */
+    height: auto;
+}
+
+/* Ensure <strong> inside .coming-soon also uses the correct color */
+.coming-soon strong {
+    color: inherit;
+    /* Inherit the color from .coming-soon */
+    font-weight: bold;
+    /* Retain bold styling */
+}
+
+/* Scoped to Services Page */
+.services-section .columns.is-multiline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.services-section .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Pushes the "Coming Soon" section to the bottom */
+    height: 100%;
+    /* Ensures equal height across all cards */
+    padding: 20px;
+    /* Add padding for better spacing */
+}
+
+.services-hero {
+    background-image: url('../images/two-women-chatting.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: rgba(16, 43, 76, 0.6);
+    /* Fallback for older browsers */
+    min-height: 400px;
+    position: relative;
+    /* Ensures overlay content can position relative to the hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Ensures it spans the full viewport width */
+}
+
+.services-hero .hero-body {
+    background-color: rgba(16, 43, 76, 0.6);
+    /* Blue scrim overlay */
+    color: #FDF9ED;
+    /* Matches the text color */
+    padding: 40px 20px;
+    width: 100%;
+    /* Make the overlay stretch to the full width */
+    height: 100%;
+    /* Make the overlay stretch to the full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* Position it relative to the parent container */
+    top: 0;
+    /* Ensure it starts at the top of the hero */
+    left: 0;
+    /* Ensure it starts at the left of the hero */
+}
+
+.services-hero .hero-description {
+    margin-top: 20px;
+    color: #FDF9ED;
+    /* Keep text visible over the background */
+}
+
 /* Footer Container */
 .footer {
     background-color: #102B4C;
