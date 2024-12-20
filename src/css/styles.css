@@ -838,6 +838,23 @@ address h6.wordmark {
     position: relative;
 }
 
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /* Adjusts the vertical position of the underline */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    /* Length of the underline */
+    height: 3px;
+    /* Thickness of the underline */
+    background-color: #256A93;
+    /* Color of the underline */
+    border-radius: 2px;
+    /* Optional: Adds slight rounding to the ends */
+}
+
 .section-title .icon-inline {
     width: 40px;
     height: auto;
@@ -847,7 +864,7 @@ address h6.wordmark {
 .story-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 
 /* Flex Layout for Image Gallery */
