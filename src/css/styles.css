@@ -849,34 +849,48 @@ address h6.wordmark {
     gap: 40px;
 }
 
+/* Updated Grid Layout for Image Gallery */
 .story-photos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    justify-items: center;
+    align-items: start;
 }
 
+/* Updated Individual Photo Container */
 .story-photo {
     width: 100%;
-    height: 200px;
-    /* Uniform Height */
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: none;
-    /* Remove shadows */
-    transition: none;
-    /* Remove transitions */
     background-color: #FFFFFF;
-    /* Optional: White background to fill empty space */
 }
 
+/* Updated Images Styling */
 .story-photo img {
-    height: 100%;
-    width: auto;
-    /* Allow width to adjust based on aspect ratio */
-    object-fit: contain;
-    /* Ensure entire image is visible without cropping */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.story-photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .story-photos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .story-photos {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
 }
 
 .story-text {
