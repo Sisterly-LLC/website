@@ -1026,21 +1026,20 @@ address h6.wordmark {
     /* Add padding for better spacing */
 }
 
-.services-hero {
+.content-container.services-hero-section {
     background-image: url('../images/two-women-chatting.jpg');
+    /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/two-man-laughing-at-each-other-FHiJWoBodrs */
     background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-position: center;
     background-color: rgba(16, 43, 76, 0.6);
-    /* Fallback for older browsers */
-    min-height: 400px;
-    position: relative;
-    /* Ensures overlay content can position relative to the hero */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    /* Ensures it spans the full viewport width */
+    /* Primary Text Color with Alpha */
+    background-blend-mode: multiply;
+    min-height: 500px;
+    border-radius: 8px;
+}
+
+.overlay-title.commitment-description {
+    color: #FDF9ED;
 }
 
 .services-hero .hero-body {
