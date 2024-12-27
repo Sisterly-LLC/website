@@ -1069,6 +1069,26 @@ address h6.wordmark {
     /* Keep text visible over the background */
 }
 
+.service-image {
+    width: 100%;
+    height: 400px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures the image covers the container, cropping if necessary */
+    object-position: center;
+    /* Centers the image within the container */
+    border-radius: 8px;
+    /* Optional: Rounded top corners to match card aesthetics */
+    margin-bottom: 15px;
+    /* Space between image and content */
+}
+
+@media (max-width: 768px) {
+    .service-image {
+        height: 200px;
+    }
+}
+
 /* Footer Container */
 .footer {
     background-color: #102B4C;
