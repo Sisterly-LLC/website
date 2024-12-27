@@ -1030,7 +1030,7 @@ address h6.wordmark {
     background-image: url('../images/two-women-chatting.jpg');
     /* Photo by Nathan Anderson on Unsplash https://unsplash.com/photos/two-man-laughing-at-each-other-FHiJWoBodrs */
     background-size: cover;
-    background-position: center;
+    background-position: center 10%;
     background-color: rgba(16, 43, 76, 0.6);
     /* Primary Text Color with Alpha */
     background-blend-mode: multiply;
