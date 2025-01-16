@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:image" content="images/logo-fullcolor.svg" />
+    <title>Sisterly Invoice Portal - Log In</title>
+    <link rel="icon" href="../images/logo-fullcolor.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="columns is-vcentered">
+        <div class="column is-narrow logo-container">
+            <a href="../index.html" class="logo-link">
+                <div class="logo-and-wordmark">
+                    <figure class="image is-64x64">
+                        <img src="../images/logo-fullcolor.svg" alt="Logo" class="logo-img">
+                    </figure>
+                    <h1 class="title wordmark">Sisterly</h1>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <!-- Bulma Columns Container with is-centered -->
+        <div class="columns is-centered">
+            <!-- Column with specific size -->
+            <div class="column is-6 contact-form">
+                <h2 class="contact-section-title">
+                    <img src="../images/heart.svg" alt="Heart Icon" class="heart-icon-inline">
+                    <span class="vision-mission-title-text">Provider&nbsp;Login</span>
+                </h2>
+                <form id="loginForm">
+                    <div class="field">
+                        <label class="label" for="lastName">Provider Last Name:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="passcode">Passcode:</label>
+                        <div class="control">
+                            <input class="input" type="password" id="passcode" name="passcode" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <button id="submitBtn" class="button is-info" type="submit" disabled>Log in</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="loginMessage" class="notification is-danger is-hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include JavaScript Files -->
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
