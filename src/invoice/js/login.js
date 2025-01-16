@@ -66,19 +66,14 @@ document.getElementById('loginForm').addEventListener('submit', async function (
             passcode: '12345',
         });
 
-        fetch('https://script.google.com/macros/s/AKfycbxRA4rWTwQ-xDibArYs3E-g4QU18q-3pIobrd75Nwnfzf8OlmiaSgNN99RJHDYyyqsAxA/exec?path=login', {
+        fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?path=login', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                'Content-Type': 'application/x-www-form-urlencoded', // Simple Content-Type
             },
-            body: data.toString(),
+            body: data.toString(), // Properly encode the body
         })
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
+            .then((response) => response.json())
             .then((result) => {
                 console.log('Success:', result);
             })
