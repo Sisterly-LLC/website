@@ -64,6 +64,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         // Send login request to the backend
         const response = await fetch('https://script.google.com/macros/s/AKfycbxRA4rWTwQ-xDibArYs3E-g4QU18q-3pIobrd75Nwnfzf8OlmiaSgNN99RJHDYyyqsAxA/exec?path=login', {
             method: 'POST',
+            redirect: "follow",
             headers: {
                 'Content-Type': 'application/json'
             },
