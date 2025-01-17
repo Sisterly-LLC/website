@@ -1129,6 +1129,12 @@ address h6.wordmark {
     }
 }
 
+@media (min-width: 769px) {
+    .provider-login-container {
+        min-height: 383.5pt;
+    }
+}
+
 /* Footer Container */
 .footer {
     background-color: #102B4C;
